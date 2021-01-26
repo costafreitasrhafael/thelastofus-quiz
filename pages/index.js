@@ -26,10 +26,18 @@ export default function Home() {
         <title>Quiz The Last of US</title>
         <meta name="title" content="Quiz The Last of US" />
 
+        {/* Open Graph / Facebook */}
         <meta property="og:type"  content="website" />
         <meta property="og:url"   content="https://thelastofus-quiz.rhafaelcosta.vercel.app/" />
         <meta property="og:title" content="Quiz The Last of US" />
         <meta property="og:image" content={db.bg} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://thelastofus-quiz.rhafaelcosta.vercel.app/" />
+        <meta property="twitter:title" content="Quiz The Last of US" />
+        <meta property="twitter:image" content={db.bg} />
+
       </Head>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
