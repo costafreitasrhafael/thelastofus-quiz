@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -20,27 +21,38 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <QuizLogo />
-        <Widget>
-          <Widget.Header>
-            <h1>{db.title}</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>{db.description}</p>
-          </Widget.Content>
-        </Widget>
+    <>
+      <Head>
+        <title>Quiz The Last of US</title>
+        <meta name="title" content="Quiz The Last of US" />
 
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/costafreitasrhafael" />
-    </QuizBackground>
+        <meta property="og:type"  content="website" />
+        <meta property="og:url"   content="https://thelastofus-quiz.rhafaelcosta.vercel.app/" />
+        <meta property="og:title" content="Quiz The Last of US" />
+        <meta property="og:image" content={db.bg} />
+      </Head>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <QuizLogo />
+          <Widget>
+            <Widget.Header>
+              <h1>{db.title}</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>{db.description}</p>
+            </Widget.Content>
+          </Widget>
+
+          <Widget>
+            <Widget.Content>
+              <h1>Quizes da Galera</h1>
+              <p>lorem ipsum dolor sit amet...</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/costafreitasrhafael" />
+      </QuizBackground>
+    </>
   )
 }
