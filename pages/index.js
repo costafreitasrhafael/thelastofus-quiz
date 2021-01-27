@@ -79,7 +79,6 @@ export default function Home() {
           <Widget>
             <Widget.Header>
               <h1>Quiz dos brothers</h1>
-              <p> Dá uma olhada nesses quizes incríveis que o pessoal da Imersão fez: </p>
             </Widget.Header>
             <Widget.Content>
               <ul>
@@ -89,7 +88,6 @@ export default function Home() {
                 <li><a href="https://one-piece-quiz.cassiofb-dev.vercel.app/">One Piece</a></li>
                 <li><a href="https://brunoquiz.brunosaibert.vercel.app/">Harry Potter</a></li>
               </ul>
-              <p>SURREAL O QUE ELES FIZERAM!!</p>
             </Widget.Content>
           </Widget>
           <Footer />
