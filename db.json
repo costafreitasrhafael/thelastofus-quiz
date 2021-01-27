@@ -1,7 +1,7 @@
 {
     "bg": "https://tecnoblog.net/meiobit/wp-content/uploads/2020/07/20200717laguna-the-last-of-us-part-2-florest-song.jpg",
     "title": "Quiz The Last of US",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "description": "Teste os seus conhecimentos sobre o Game The Last of US",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -32,7 +32,8 @@
     "theme": {
       "colors": {
         "primary": "#006064",
-        "secondary": "#80d8ff",
+        "secondary": "#91C499",
+        "secondary": "#4a148c",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
